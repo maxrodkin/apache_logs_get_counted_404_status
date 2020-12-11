@@ -19,26 +19,12 @@ Got DataFrame
 
 
 ```python
-data.head()
+from IPython.display import display, HTML
+
+display(HTML(data.head().to_html()))
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -57,56 +43,54 @@ data.head()
       <th>0</th>
       <td>83.149.9.216</td>
       <td>[17/May/2015:10:05:03 +0000]</td>
-      <td>"GET /presentations/logstash-monitorama-2013/i...</td>
+      <td>"GET /presentations/logstash-monitorama-2013/images/kibana-search.png HTTP/1.1"</td>
       <td>200</td>
       <td>203023.0</td>
-      <td>"http://semicomplete.com/presentations/logstas...</td>
-      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1...</td>
+      <td>"http://semicomplete.com/presentations/logstash-monitorama-2013/"</td>
+      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</td>
     </tr>
     <tr>
       <th>1</th>
       <td>83.149.9.216</td>
       <td>[17/May/2015:10:05:43 +0000]</td>
-      <td>"GET /presentations/logstash-monitorama-2013/i...</td>
+      <td>"GET /presentations/logstash-monitorama-2013/images/kibana-dashboard3.png HTTP/1.1"</td>
       <td>200</td>
       <td>171717.0</td>
-      <td>"http://semicomplete.com/presentations/logstas...</td>
-      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1...</td>
+      <td>"http://semicomplete.com/presentations/logstash-monitorama-2013/"</td>
+      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</td>
     </tr>
     <tr>
       <th>2</th>
       <td>83.149.9.216</td>
       <td>[17/May/2015:10:05:47 +0000]</td>
-      <td>"GET /presentations/logstash-monitorama-2013/p...</td>
+      <td>"GET /presentations/logstash-monitorama-2013/plugin/highlight/highlight.js HTTP/1.1"</td>
       <td>200</td>
       <td>26185.0</td>
-      <td>"http://semicomplete.com/presentations/logstas...</td>
-      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1...</td>
+      <td>"http://semicomplete.com/presentations/logstash-monitorama-2013/"</td>
+      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</td>
     </tr>
     <tr>
       <th>3</th>
       <td>83.149.9.216</td>
       <td>[17/May/2015:10:05:12 +0000]</td>
-      <td>"GET /presentations/logstash-monitorama-2013/p...</td>
+      <td>"GET /presentations/logstash-monitorama-2013/plugin/zoom-js/zoom.js HTTP/1.1"</td>
       <td>200</td>
       <td>7697.0</td>
-      <td>"http://semicomplete.com/presentations/logstas...</td>
-      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1...</td>
+      <td>"http://semicomplete.com/presentations/logstash-monitorama-2013/"</td>
+      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</td>
     </tr>
     <tr>
       <th>4</th>
       <td>83.149.9.216</td>
       <td>[17/May/2015:10:05:07 +0000]</td>
-      <td>"GET /presentations/logstash-monitorama-2013/p...</td>
+      <td>"GET /presentations/logstash-monitorama-2013/plugin/notes/notes.js HTTP/1.1"</td>
       <td>200</td>
       <td>2892.0</td>
-      <td>"http://semicomplete.com/presentations/logstas...</td>
-      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1...</td>
+      <td>"http://semicomplete.com/presentations/logstash-monitorama-2013/"</td>
+      <td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"</td>
     </tr>
   </tbody>
 </table>
-</div>
-
 
 
 Filtering dataframe by column status with value = 404
