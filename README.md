@@ -179,83 +179,6 @@ df.info()
     memory usage: 547.0+ KB
 
 
-
-```python
-df.describe(include=['object', 'bool'])
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ip</th>
-      <th>time</th>
-      <th>request</th>
-      <th>status</th>
-      <th>referer</th>
-      <th>user_agent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>10000</td>
-      <td>10000</td>
-      <td>10000</td>
-      <td>10000</td>
-      <td>9999</td>
-      <td>9999</td>
-    </tr>
-    <tr>
-      <th>unique</th>
-      <td>1754</td>
-      <td>4363</td>
-      <td>1734</td>
-      <td>9</td>
-      <td>628</td>
-      <td>558</td>
-    </tr>
-    <tr>
-      <th>top</th>
-      <td>66.249.73.135</td>
-      <td>[17/May/2015:23:05:30 +0000]</td>
-      <td>"GET /favicon.ico HTTP/1.1"</td>
-      <td>200</td>
-      <td>"-"</td>
-      <td>"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebK...</td>
-    </tr>
-    <tr>
-      <th>freq</th>
-      <td>482</td>
-      <td>9</td>
-      <td>747</td>
-      <td>9125</td>
-      <td>4072</td>
-      <td>1044</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 Lets check distribution of answer sise param of lines with status 404
 
 
@@ -299,7 +222,7 @@ status404_size.plot(legend = True)
 
 
     
-![png](output_16_1.png)
+![png](output_15_1.png)
     
 
 
